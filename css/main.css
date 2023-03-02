@@ -11,7 +11,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 :root {
-  --PageBG: #191825;
+  --PageBG:#191825;
+  --c1:#ECF2FF;
+  --c2:3E54AC;
+  --c3:#655DBB;
+  --c4:#BFACE2;
+  --c5:#635985;
+  --c6:#443C68;
 }
 
 html {
@@ -268,4 +274,17 @@ textarea {
 .body {
   height: 100vh;
 background:var(--PageBG);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  background: var(--c1);
 }

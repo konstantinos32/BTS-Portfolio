@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,7 +28,7 @@
 <body>
 <!--navbar section-->
 <div class="body">
-  <nav class="navbar bg-light">
+  <nav class="navbar bg-light zNav">
     <div class="container">
       <div class="navbar-brand">
         <a href="index.html">Codestas</a>
@@ -44,25 +45,57 @@
   </nav>
 
   <div class="content">
-    <div class="section">
-<p class="display-1">Info and image</p>
+    <div class="section" id="banner">
+      <p class="display-1 text-light snapPoint">Info and image</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col L-Col text-light">1</div>
+          <div class="col R-Col text-light">2</div>
+        </div>
+      </div>
     </div>
     <div class="section">
-<p class="display-1">Todo List Project</p>
+      <p class="display-1 text-light snapPoint">Todo List Project</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col L-Col text-light">3</div>
+          <div class="col R-Col text-light">4</div>
+        </div>
+      </div>
     </div>
     <div class="section">
-<p class="display-1">Nasa API</p>
+      <p class="display-1 text-light snapPoint">Nasa API</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col L-Col text-light">5</div>
+          <div class="col R-Col text-light">6</div>
+        </div>
+      </div>
     </div>
     <div class="section">
-      <p class="display-1">Contact Form</p>
+      <p class="display-1 text-light snapPoint">Contact Form</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col L-Col text-light">7</div>
+          <div class="col R-Col text-light">8</div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <footer class="footer footer bg-light-subtle position-absolute sticky-bottom start-0 end-0">
+  <footer class="footer bg-light-subtle">
     <div class="container">
-      <p class="lead text-center">Made with ❤ and 🍹</p>
+      <div class="row gap-5">
+        <div class="col">
+          <p class="lead fs-3">LOGO</p>
+        </div>
+        <div class="col"><p class="lead text-center fst-italic"> Made with ❤️ and ☕️ by Othman Adi</p></div>
+        <div class="col"><a href="#banner" class="toTOP"> Top of the Page<i class="bi bi-arrow-up"></i></a></div>
+      </div>
     </div>
   </footer>
+
+  <!--   text-light-->
 </div>
 <script src="js/main.js"></script>
 <!--Email js script-->

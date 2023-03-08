@@ -11,18 +11,18 @@
    Base styles: opinionated defaults
    ========================================================================== */
 :root {
-  --PageBG:#191825;
-  --c1:#ECF2FF;
-  --c2:3E54AC;
-  --c3:#655DBB;
-  --c4:#BFACE2;
-  --c5:#635985;
-  --c6:#443C68;
+  --PageBG: #191825;
+  --c1: #F7C8E0;
+  --c2: #3A98B9;
+  --c3: #DFFFD8;
+  --c4: #E384FF;
+  --c5: #865DFF;
+  --c6: #DC8449;
 }
 
 html {
   scroll-snap-type: y mandatory;
- -webkit-scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
 }
 
 /*html {*/
@@ -278,8 +278,9 @@ html {
 /*Custom Styled*/
 .body {
   height: 100vh;
-/*background:var(--PageBG);*/
+  /*background:var(--PageBG);*/
 }
+
 /*zNav is to overlay the box-shadow from the content divs*/
 .zNav {
   z-index: 99;
@@ -293,23 +294,28 @@ html {
   /*scroll-snap-type: y mandatory;*/
 }
 
+.makeFullHeight {
+  height: 100%;
+  background: var(--c5);
+}
+
 .section {
   background: var(--PageBG);
   position: relative;
   height: 100vh;
   scroll-snap-align: start;
-  padding: 1rem 0 1rem 0;
+  padding: 0 0 1rem 0;
   text-align: center;
-  border-bottom: 1px solid rgba(248,248,255,0.55);
-  box-shadow:10px 25px 100px var(--c5) ;
+  border-bottom: 1px solid rgba(248, 248, 255, 0.55);
+  box-shadow: 10px 25px 100px var(--c5);
 }
 
-.snapPoint{
+.snapPoint {
   position: absolute; /*to reposition the component*/
   left: 50%;
- width: 100%;
+  width: 100%;
   top: 50%;
-  transform:translate(-50%, -50%) ; /*going half of the position size from left and top*/
+  transform: translate(-50%, -50%); /*going half of the position size from left and top*/
   display: none;
 }
 
@@ -322,11 +328,15 @@ html {
   text-align: center;
 }
 
-.L-Col{
-  background: var(--c6);
+.L-Col {
+  background: transparent;
 }
 
 .R-Col {
-  background: var(--c5);
+  background: transparent;
 }
+
+
+
+
 

@@ -35,7 +35,7 @@
       <nav class="navbar bg-light zNav">
         <div class="container">
           <div class="navbar-brand">
-            <a href="index.html">Codestas</a>
+            <a href="index.html">Co&lt;de&gt;stas</a>
           </div>
           <!--    navigation button-->
           <ul class="navbar-nav">
@@ -74,8 +74,31 @@
       <p class="display-1 text-light snapPoint">Nasa API</p>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 L-Col text-light">5</div>
-          <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 R-Col text-light">6</div>
+          <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 L-Col text-light">
+            <p id="apod-title" class="display-2">Apod title</p>
+            <p id="apod-date" class="lead">Apod Date</p>
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 R-Col text-light ImageColNasa">
+            <img id="apod-image" src="" alt="Image of the day" class="img-fluid ApodImage">
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <button class="btn btn-lg btn-primary" data-bs-target="#bts-Modal" data-bs-toggle="modal">More info and HQ
+                Image
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--      Modal body-->
+      <div class="modal fade" id="bts-Modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -96,7 +119,7 @@
         <div class="col">
           <p class="lead fs-3">LOGO</p>
         </div>
-        <div class="col"><p class="lead text-center fst-italic"> Made with ❤️ and ☕️ by Othman Adi</p></div>
+        <div class="col"><p class="lead text-center fst-italic"> Made with ❤️ and ☕️ by K. Theodoropoulos</p></div>
         <div class="col"><a href="#banner" class="toTOP"> Top of the Page<i class="bi bi-arrow-up"></i></a></div>
       </div>
     </div>

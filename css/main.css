@@ -332,6 +332,14 @@ html {
   background: transparent;
 }
 
+.ImageColNasa, .ApodImage {
+  height: 40vh!important;
+  border-radius: 15px;
+  box-shadow: 0 0 150px rgba(240,248,255,0.1);
+
+
+}
+
 .R-Col {
   background: transparent;
 }
